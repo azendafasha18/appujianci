@@ -32,5 +32,22 @@ class Welcome extends CI_Controller
         $nama = 'tata';
         $blade = new Blade(VIEWPATH, APPPATH . 'cache');
         echo $blade->make('tampil', ['nama' => $nama])->render();
+
+        let umur = prompt("Masukkan umur Anda: ");
+
+		else if (usia <10) {
+			kategori ="Anak-anak";
+		}
+		else if (usia <20) {
+			kategori ="Remaja";
+		}
+		else if (usia <30) {
+			kategori ="Dewasa";
+		}
+		else if (usia >30) {
+			kategori ="Tua";
+		}
+		console.log("Status: " + status);
+
     }
 }
